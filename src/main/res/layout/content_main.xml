@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.dragon.alphaweather.activity.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <com.viewpagerindicator.CirclePageIndicator
+        android:id="@+id/content_main_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/colorPrimary"
+        android:paddingTop="10dp">
+
+    </com.viewpagerindicator.CirclePageIndicator>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/content_main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+</LinearLayout>
