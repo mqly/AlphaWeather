@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="colorPrimary">#FF4CAF50</color>
-    <color name="colorPrimaryDark">#FF2E7D32</color>
-    <color name="colorAccent">#7FBF27</color>
-    <color name="colorSideBar">#CC4CAF50</color>
-    <color name="colorAirBad">#cce21409</color>
-    <color name="colorAirMid">#cce7bc11</color>
-</resources>
