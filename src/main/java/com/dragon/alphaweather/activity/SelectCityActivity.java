@@ -13,7 +13,6 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.alibaba.fastjson.JSON;
 import com.dragon.alphaweather.R;
@@ -254,8 +253,8 @@ public class SelectCityActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
-            String result = formatJson(s);
-            cityDatas = getAllCityList(result);
+//            String result = formatJson(s);
+            cityDatas = getAllCityList(s);
             saveToDB(cityDatas);
             initSortListViewData();
             Collections.sort(sourceDataList, pinyinComparator);
