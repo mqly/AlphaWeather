@@ -244,7 +244,8 @@ public class CityWeatherFragment extends Fragment {
         pm2.setText(wm2);
         String wm10 = aw.getHeWeather5().get(0).getAqi().getCity().getPm10();
         pm10.setText(wm10);
-        double daywm = (Double.parseDouble(wm2) + Double.parseDouble(wm10)) * 0.75 * 8;
+        //        Log.e("TAG","wwm2:"+wm2+"wm10:"+wm10);
+        double daywm = (Double.parseDouble(wm2) + 30) * 0.75 * 8;
         wmzl.setText(daywm + "");
         java.text.DecimalFormat df = new java.text.DecimalFormat("#.#");
         String nx = df.format((350000 / daywm) / 365);
