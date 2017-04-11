@@ -11,12 +11,12 @@ import com.dragon.alphaweather.entity.CityAqi;
 public interface AirQualityContract {
     interface View extends BaseView<Presenter> {
         void markOnMap(CityAqi ca);
+
         void showError(String error);
     }
 
     interface Presenter extends BasePresenter {
         void markAirQuality();
-
 
     }
 }
